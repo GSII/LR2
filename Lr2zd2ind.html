@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
-    <title>Lab2 </title>
+    <title>Lab2ind </title>
 </head>
 <form class = "box" action = "index.html" method="POST">
-    <hl>Вычислить дискриминант</hl>
+    <hl>Вычислить минимальное</hl>
         <br>
         <h>a</h>
-        <input type="number" id ="A" placeholder="Введите число a"/>
+        <input type="number" id = "A" placeholder="Введите число a"/>
         <br>
         <h>b</h>
-        <input type="number" id ="B" placeholder="Введите число b"/>
+        <input type="number" id = "B" placeholder="Введите число b"/>
         <br>
         <h>c</h>
-        <input type="number" id ="C" placeholder="Введите число c"/>
+        <input type="number" id = "C" placeholder="Введите число c"/>
         <br>
 
-        <input type="button" id="btn" value="Вычислить дискриминант" onclick="CalcD()"/>
+        <input type="button" id="btn" value="Вычислить минимальное" onclick="CalcD()"/>
 
     <script>
        function CalcD() 
@@ -24,8 +24,7 @@
            var a = document.getElementById('A').value;
            var b = document.getElementById('B').value;
            var c = document.getElementById('C').value;
-           alert(b*b-4*a*c);
+           alert(Math.min(a, b, c));
        }
        </script>
        </form>
-       </html>
